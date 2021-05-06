@@ -1,1 +1,118 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+<h1>这是标题</h1>
+<ul>
+    <li> <a href="http://www.baidu.com" target="_blank">百度1</a><br /> </li>
+    <li> <a href="http://www.baidu.com" target="_blank">百度2</a><br /> </li>
+    <li> <a href="http://www.baidu.com" target="_blank">百度3</a><br /> </li>
+    <li> <a href="http://www.baidu.com" target="_blank">百度4</a><br /> </li>
+    <li> <a href="http://www.baidu.com" target="_blank">百度5</a><br /> </li>
+</ul>
+<h2>这也是标题</h2>
+<h3>这还是标题</h3>
+作者名：YMM 发表时间：xx-xx-xx<br />
+阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+<br />
+阿巴阿巴阿巴阿巴
+<a href="http://www.baidu.com" target="_blank">百度6</a>阿巴阿巴阿巴阿巴阿巴<br />
+<img src="images/img1.jpg" width="500" height="200" title="这是张无关紧要的图片" /><br />
+阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+<br />
+阿巴阿巴阿巴阿巴
+<a href="http://www.baidu.com" target="_blank">百度6</a>阿巴阿巴阿巴阿巴阿巴
+<h2>这还是标题</h2>
+<h3>这还是标题</h3>
+作者名：YMM 发表时间：xx-xx-xx<br />
+阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+<br />
+阿巴阿巴阿巴阿巴
+<a href="http://www.baidu.com" target="_blank">百度7</a>阿巴阿巴阿巴阿巴阿巴<br />
+<img src="images/img1.jpg" width="500" height="200" title="这是张无关紧要的图片" /><br />
+阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+<ul>
+    <li>西瓜</li>
+    <li>苹果</li>
+    <li>葡萄</li>
+</ul>
+This is a little parrot<br />
+<img src="images/img1.jpg" width="500" height="200" title="这是张无关紧要的图片" /><br />
+This is a little parrot<br />
+<img src="images/img1.jpg" width="500" height="200" title="这是张无关紧要的图片" /><br />
+This is a little parrot<br />
+<img src="images/img1.jpg" width="500" height="200" title="这是张无关紧要的图片" /><br />
+This is a little parrot<br />
+<img src="images/img1.jpg" width="500" height="200" title="这是张无关紧要的图片" /><br />
+<h1>这是最后一个标题</h1>
+<h2>这是最后一个文章二级标题</h2>
+作者名：YMM 发表时间：xx-xx-xx<br />
+<ol>
+    <li>第一名</li>
+    <li>第二名</li>
+    <li>第三名</li>
+</ol>
+<table border="1" width="500" height="250">
+    <tr>
+        <th>货物</th>
+        <th>价格（元）</th>
+        <th>更多</th>
+    </tr>
+    <tr>
+        <td>A3零件</td>
+        <td>1500</td>
+        <td><a href="http://www.baidu.com" target="_blank">百度</a></td>
+    </tr>
+    <tr>
+        <td>A4零件</td>
+        <td>2500</td>
+        <td><a href="http://www.baidu.com" target="_blank">百度</a></td>
+    </tr>
+    <tr>
+        <td>A5零件</td>
+        <td>3500</td>
+        <td><a href="http://www.baidu.com" target="_blank">百度</a></td>
+    </tr>
+    <tr>
+        <td>总计</td>
+        <td colspan="2">7500</td>
+    </tr>
+</table>
+<form>
+    请输入你的邮箱地址：<input type="text" name="email" value="邮箱地址" maxlength="8"> <br />
+    （请按要求输入你的邮箱）<br />
+    请输入你的密码：<input type="password" name="password"> <br />
+    请再一次输入你的密码：<input type="password"> <br />
+    （密码为6-16字符） <br>
+    性别：男<input type="radio" name="sex"> 女<input type="radio" name="sex"> <br>
+    城市:
+    <select>
+        <option>贵州</option>
+        <option>大连</option>
+        <option>广东</option>
+        <option>西安</option>
+        <option>福建</option>
+        <option>合肥</option>
+        <option>辽宁</option>
+        <option>重庆</option>
+        <option>四川</option>
+        <option>上海</option>
+        <option>天津</option>
+    </select><br>
+    爱好：体育<input type="checkbox" name="hobby"> 学习<input type="checkbox"> 编程<input type="checkbox"> 浑浑噩噩<input
+        type="checkbox"> <br>
+    个人描述：
+    <textarea rows="4" cols="12">对你个人的描述
+    </textarea>
+    <input type="submit" value="注册"> <input type="reset" value="重新设置">
+</form>
+</body>
+
+</html>
