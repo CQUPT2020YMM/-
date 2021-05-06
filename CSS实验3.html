@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报纸排版</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<style>
+    .box {
+        position: absolute;
+        width: 980px;
+        height: 1386px;
+        margin: 0 auto;
+        background-color: white;
+        z-index: 0;
+        margin-left: 266px;
+    }
+
+    .box1 {
+        position: absolute;
+        width: 110px;
+        height: 61px;
+        background-color: red;
+        margin-left: 50px;
+        z-index: 1;
+    }
+
+    .box span {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .box2 {
+        position: absolute;
+        width: 892px;
+        height: 2px;
+        margin-left: 50px;
+        margin-right: 60px;
+        margin-top: 61px;
+        background-color: #938;
+    }
+
+    .gray {
+        font-size: 12px;
+        width: 50px;
+        height: 12px;
+        position: absolute;
+        margin-top: 45px;
+        margin-left: 880px;
+        margin-right: 50px;
+        text-decoration: #d45d5c;
+    }
+
+    .box3 {
+        width: 641px;
+        height: 301px;
+        position: absolute;
+        margin-top: 81px;
+        margin-left: 50px;
+        margin-right: 289px;
+        background-color: greenyellow;
+    }
+
+    .box4 {
+        width: 203px;
+        height: 2px;
+        position: absolute;
+        margin-top: 81px;
+        margin-left: 727px;
+        margin-right: 50px;
+        background-color: #cc8091;
+    }
+
+    .box5 {
+        width: 203px;
+        height: 80px;
+        position: absolute;
+        margin-top: 91px;
+        margin-left: 727px;
+        margin-right: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 45px;
+    }
+
+    .box6 {
+        width: 203px;
+        height: 40px;
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 727px;
+        margin-right: 50px;
+        font-family: "kaiti";
+        font-size: 12px;
+        color: #676767;
+        line-height: 15px;
+    }
+
+    .box7 {
+        width: 203px;
+        height: 120px;
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 707px;
+        margin-right: 50px;
+        font-family: "weiruanyahei";
+        font-size: 116px;
+        color: #75b86b;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .box8 {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: 310px;
+        margin-left: 727px;
+        margin-right: 183px;
+        font-family: "weiruanyahei";
+        font-size: 55px;
+        color: #cc8091;
+    }
+
+    .box9 {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        margin-top: 330px;
+        margin-left: 810px;
+        margin-right: 183px;
+        font-family: "weiruanyahei";
+        font-size: 21px;
+        color: #cc8091;
+    }
+
+    .box10 {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        margin-top: 356px;
+        margin-left: 810px;
+        margin-right: 183px;
+        font-family: "weiruanyahei";
+        font-size: 12px;
+        color: #cc8091;
+    }
+
+    .box11 {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        margin-top: 406px;
+        margin-left: 50px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: "weiruanyahei";
+        font-size: 16px;
+        color: #418c59;
+    }
+
+    .box12 {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-top: 430px;
+        margin-left: 50px;
+        font-family: "songti";
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .box13 {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        margin-top: 406px;
+        margin-left: 274px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: "weiruanyahei";
+        font-size: 16px;
+        color: #d2994f;
+    }
+
+    .box14 {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-top: 430px;
+        margin-left: 274px;
+        font-family: "songti";
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .box15 {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        margin-top: 406px;
+        margin-left: 500px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: "weiruanyahei";
+        font-size: 16px;
+        color: #cc7680;
+    }
+
+    .box16 {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-top: 430px;
+        margin-left: 500px;
+        font-family: "songti";
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .box17 {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-top: 510px;
+        margin-left: 500px;
+        font-family: "weiruanyahei";
+        text-decoration: underline;
+        font-size: 12px;
+        line-height: 16px;
+        opacity: 0.5;
+    }
+
+    .box18 {
+        width: 203px;
+        height: 120px;
+        position: absolute;
+        margin-top: 640px;
+        margin-left: 50px;
+        font-family: "heiti";
+        font-size: 72px;
+        color: #f5e327;
+        font-style: italic;
+    }
+
+    .box19 {
+        width: 203px;
+        height: 120px;
+        position: absolute;
+        margin-top: 670px;
+        margin-left: 210px;
+        font-family: "heiti";
+        font-size: 42px;
+        color: #11456b;
+    }
+
+    .box20 {
+        width: 203px;
+        height: 120px;
+        position: absolute;
+        margin-top: 728px;
+        margin-left: 50px;
+        font-family: "heiti";
+        font-size: 42px;
+        color: #11456b;
+    }
+
+    .box21 {
+        width: 445px;
+        height: 2px;
+        position: absolute;
+        margin-top: 790px;
+        margin-left: 50px;
+        background-color: #11456b;
+    }
+
+    .box22 {
+        width: 445px;
+        height: 460px;
+        position: absolute;
+        margin-top: 810px;
+        margin-left: 50px;
+        background-color: rgb(101, 223, 223);
+
+    }
+
+    .box23 {
+        float: left;
+        font-family: "weiruanyahei";
+        font-size: 70px;
+        color: #f5e327;
+    }
+
+    .box24 {
+        float: right;
+    }
+
+    .boxa {
+        width: 325px;
+        height: 270px;
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 0px；
+    }
+
+    .boxb {
+        width: 465px;
+        height: 40px;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 0px；
+    }
+
+    .box25 {
+        width: 458px;
+        height: 275px;
+        position: absolute;
+        margin-top: 640px;
+        margin-left: 512px;
+        background-color: rgb(228, 125, 202);
+    }
+
+    .box26 {
+        width: 3px;
+        height: 44px;
+        position: absolute;
+        margin-top: 862px;
+        margin-left: 550px;
+        background-color: #72b16a;
+    }
+
+    .box27 {
+        font-size: 30px;
+        position: absolute;
+        margin-top: 862px;
+        margin-left: 560px;
+    }
+
+    .box28 {
+        font-size: 16px;
+        position: absolute;
+        margin-top: 880px;
+        margin-left: 690px;
+        font-family: "weiruanyahei";
+        font-style: italic;
+        color: #72b16a;
+        font-weight: 140%;
+    }
+
+    .box29 {
+        width: 458px;
+        height: 338px;
+        position: absolute;
+        margin-top: 938px;
+        margin-left: 512px;
+        background-color: rgb(235, 241, 223);
+    }
+
+    .box30 {
+        width: 240px;
+        height: 160px;
+        position: absolute;
+        background-color: rgb(182, 53, 53)
+    }
+
+    .boxc {
+        font-size: 110px;
+        position: absolute;
+        margin-top: 8px;
+        color: white;
+    }
+
+    .boxd {
+        width: 2px;
+        height: 86px;
+        position: absolute;
+        margin-top: 38px;
+        margin-left: 68px;
+        background-color: white
+    }
+
+    .boxe {
+        font-size: 21px;
+        position: absolute;
+        margin-top: 32px;
+        margin-left: 78px;
+        z-index: 1;
+    }
+
+    .boxf {
+        font-size: 10px;
+        position: absolute;
+        margin-top: 112px;
+        margin-left: 78px;
+    }
+
+    .boxg {
+        width: 190px;
+        height: 160px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 250px;
+
+    }
+
+    .box31 {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 220px;
+        font-size: 60px;
+        color: rgb(243, 19, 19);
+    }
+
+    .box32 {
+        position: absolute;
+        margin-top: 110px;
+        margin-left: 393px;
+        font-size: 60px;
+        color: rgb(243, 19, 19);
+    }
+</style>
+
+<body>
+    <div class="box">
+
+        <div class="box1"><span>网页</span></div>
+        <div class="gray">2021.04.26</div>
+        <div class="box2"></div>
+        <div class="box3">图片</div>
+        <div class="box4"></div>
+        <div class="box5">BAOUT<br>法律</div>
+        <div class="box6">这是对新闻的简介 这是对新闻的简介<br>这是对新闻的简介</div>
+        <div class="box7">800</div>
+        <div class="box8">6.6</div>
+        <div class="box9">CSS</div>
+        <div class="box10">CSSCSSCSSCSSCSS</div>
+        <div class="box11">发生地点</div>
+        <div class="box12">
+            阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴
+        </div>
+        <div class="box13">发生时间</div>
+        <div class="box14">
+            阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴
+        </div>
+        <div class="box15">问题简述</div>
+        <div class="box16">阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴</div>
+        <div class="box17">What--------40%<br>What--------30%<br>What--------20%</div>
+        <div class="box18">THE</div>
+        <div class="box19">TECHNOLOGE</div>
+        <div class="box20">OF&nbsp;&nbsp;FRINT</div>
+        <div class="box21"></div>
+        <div class="box22">
+            <div class="box23">前</div>
+            急急急急急急急急斤斤计较急急急急急急急记急急急就斤计斤就计较急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急斤斤计较斤斤计较急急急急斤斤计较急急急急急急急斤斤计较斤斤计较急急急急急急急急急急急急急急急急急急急急急急急急急急斤斤计较急急急急急急急急急急急急急
+            <div class="box24"><img src="images/logo2.png" width="120" height="300"></div>
+            <div class="boxa">
+                斤斤计较斤斤计较斤斤计较急急急急急急急急急急急急斤斤计较斤斤计较急急急急急急急急急急急急急急急急急急急急急斤斤计较急急急急急急急急斤斤计较斤斤计较急急急急急急急急急急急急急急急急急急急急急斤斤计斤斤计较斤斤计较急急急急急急斤斤计较斤斤计较急急急急急急急急急斤斤斤斤计较急急急急急急急急急急急急计较急急急急急急急急急急急急急急急斤斤计较急急急急急急急急急急急急急急急6较斤斤计较急急急急急急急急急斤斤计较急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急斤斤计较急急急急急急急急急急急急急急急急急急
+            </div>
+            <div class="boxb">斤斤计较急急急急急急急急急急急急</div>
+        </div>
+        <div class="box25">图片</div>
+        <div class="box26"></div>
+        <div class="box27">前端技术</div>
+        <div class="box28">前端前端前端前端</div>
+        <div class="box29">&nbsp;&nbsp;
+            <ul><br>
+                <li>前端前端前端前端前端前端..............前端</li><br>
+                <li>前端前端前端前端.................................前端</li><br>
+                <li>前端前端前端前端前端前端前端...................前端</li>
+            </ul>
+            <div class="box30">
+                <div class="boxc">0</div>
+                <div class="boxd"></div>
+                <div class="boxe">ONE TWO<br>THREE FORE FIVE</div>
+                <div class="boxf">hello world hello world</div>
+            </div>
+            <div class="boxg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello world hello world hello world hello
+                world hello world hello world hello world hello world hello world hello world hello world</div>
+            <div class="box31">“</div>
+            <div class="box32">”</div>
+        </div>
+    </div>
+</body>
+
+</html>
