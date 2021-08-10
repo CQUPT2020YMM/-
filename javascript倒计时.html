@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倒计时案例</title>
+</head>
+
+<body>
+    <style>
+        .big {
+            width: 1000px;
+            height: 750px;
+            position: absolute;
+            left: 270px;
+            top: 0px;
+            background-color: grey;
+        }
+
+        .bbig {
+            width: 1536px;
+            height: 750px;
+            z-index: 0;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: rgb(148, 148, 241);
+        }
+
+        button {
+            width: 80px;
+            height: 54px;
+            position: absolute;
+            right: 237px;
+            top: 99px;
+        }
+
+        .b1 {
+            width: 400px;
+            height: 150px;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            background-color: white;
+        }
+        .b2{
+width: 300px;
+height: 50px;
+position: absolute;
+left: 350px;
+top: 160px;
+background-color: grey;
+        }
+    </style>
+    <div class="bbig">
+        <div class="big">
+            <input
+                style="width: 400px;height: 50px; position: absolute;left: 280px;top: 100px;border: 0px;outline: none;color: #999;"
+                type="text" name="tname" value="请在这里输入倒计时截止的时间">
+            <button>添加并开始计时</button>
+            <div class="b1">
+                <span id="day"></span>
+                <span id="hour"></span>
+                <span id="minute"></span>
+                <span id="second"></span>
+            </div>
+            <div class="b2">输入的时间格式为：“年-月-日 时:分:秒”<br>例如：“2020-07-06 0:0:0”</div>
+        </div>
+    </div>
+    <script>
+        var bbig = document.querySelector('.bbig');
+        var big = document.querySelector('.big');
+        var text = document.querySelector('input');
+        text.onfocus = function () {
+            if (text.value == "请在这里输入倒计时截止的时间") {
+                text.value = '';
+            }
+        }
+        text.onblur = function () {
+            if (text.value == '') {
+                text.value = "请在这里输入倒计时截止的时间";
+            }
+        }
+        var btn = document.querySelector('button');
+        btn.onclick = function countTime() {
+            var val=document.querySelector('input').value;
+            console.log(val);
+            var date = new Date();
+            var now = date.getTime();
+            var endDate = new Date(val);
+            var end = endDate.getTime();
+            var leftTime = end - now;
+            var d, h, m, s;
+            if (leftTime >= 0) {
+                d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+                h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+                m = Math.floor(leftTime / 1000 / 60 % 60);
+                s = Math.floor(leftTime / 1000 % 60);
+            }
+            document.getElementById("day").innerHTML = d + "天";
+            document.getElementById("hour").innerHTML = h + "时";
+            document.getElementById("minute").innerHTML = m + "分";
+            document.getElementById("second").innerHTML = s + "秒";
+            setTimeout(countTime, 1000);
+        }
+    </script>
+</body>
+
+</html>
