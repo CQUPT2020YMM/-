@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        button {
+            position: absolute;
+            left: 65px;
+            top: 280px;
+        }
+    </style>
+    <form style="line-height: 10px;">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名</p><input class="input1"
+            type="text" value="请输入用户名" name="tname" style="color: #999;"><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码</p><input class="input2"
+            type="text" value="请输入密码" name="tname" style="color: #999;"> <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码</p><input class="input3"
+            type="text" value="请再次输入密码" name="tname" style="color: #999;"><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号</p><input class="input4"
+            type="text" value="请输入手机号" name="tname" style="color: #999;">
+    </form>
+    <button>注册</button>
+    <script>
+        var input1 = document.querySelector(".input1");
+        var input2 = document.querySelector(".input2");
+        var input3 = document.querySelector(".input3");
+        var input4 = document.querySelector(".input4");
+        var btn = document.querySelector("button");
+        input1.onfocus = function () {
+            if (input1.value == "请输入用户名") {
+                input1.value = '';
+            }
+        }
+        input2.onfocus = function () {
+            if (input2.value == "请输入密码") {
+                input2.value = '';
+            }
+        }
+        input3.onfocus = function () {
+            if (input3.value == "请再次输入密码") {
+                input3.value = '';
+            }
+        }
+        input4.onfocus = function () {
+            if (input4.value == "请输入手机号") {
+                input4.value = '';
+            }
+        }
+        input1.onblur = function () {
+            if (input1.value == '') {
+                input1.value = "请输入用户名";
+            }
+        }
+        input2.onblur = function () {
+            if (input2.value == '') {
+                input2.value = "请输入密码";
+            }
+        }
+        input3.onblur = function () {
+            if (input3.value == '') {
+                input3.value = "请再次输入密码";
+            }
+        }
+        input4.onblur = function () {
+            if (input4.value == '') {
+                input4.value = "请输入手机号";
+            }
+        }
+        btn.onclick = function (check) {
+            var reg = new RegExp("^[0-9]*$");
+            if (input1.value.length > 6 || input1.value == '') {
+                alert("用户名不能为空且不能大于6个字符");
+                return false;
+            }
+            if (input2 != input3) {
+                alert("两次密码不一致");
+                return false;
+            }
+            if (!reg.test(input4.value)) {
+                alert("请输入数字");
+                return false;
+            }
+            if (!/^[0-9]*$/.test(input4.value)) {
+                alert("请输入数字");
+                return false;
+            }
+        }
+        if (check != false) {
+            alert("注册成功");
+        }
+    </script>
+</body>
+
+</html>
