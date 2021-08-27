@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="b1">
+        <button class="b2">添加</button>
+        <a>备忘录</a>
+        <button class="b3">删除</button>
+        <hr>
+        <ul></ul>
+
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            $('.b2').on('click', function () {
+                $('ul').append("<li><textarea></textarea><button class='sure'>确定</button></li>");
+                $('ul').on('click', "li .sure", function () {
+                    var text = $(this).parent().children("textarea").val();
+                    $(this).parent().html("<div></div>" + "<p>" + text + "<p>");
+                })
+                $("ul").on("click", "li p", function () {
+                    var textarea = $(this).parent().children("p").val();
+                    $(this).parent().html("<textarea>" + textarea + "</textarea><button class='sure'>确定</button>");
+                })
+                $("ul").on("click", "li div", function () {
+                    if ($(this).hasClass("on")) {
+                        $(this).removeClass("on");
+                    } else {
+                        $(this).addClass("on");
+                    }
+                    $(".b3").on("click", function () {
+                        $(".on").parent().remove();
+                    })
+                })
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>
